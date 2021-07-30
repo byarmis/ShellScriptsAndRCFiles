@@ -56,3 +56,18 @@ let NERDTreeIgnore = ['\.pyc$', '__pycache_']
 
 set whichwrap+=<,>,h,l,[,] " left and right at end of lines will wrap
 
+" \ + = and \ + - increase and decrease vsplit size
+nnoremap \= :exe "vertical resize +10"<CR>
+nnoremap \- :exe "vertical resize -10"<CR>
+
+" New split panes open to the bottom and right
+set splitbelow
+set splitright
+
+nnoremap <C-j> <C-w><C-j>
+nnoremap <C-k> <C-w><C-k>
+nnoremap <C-l> <C-w><C-l>
+nnoremap <C-h> <C-w><C-h>
+
+let NERDTreeIgnore= ['\.pyc$'] " Ignore .pyc files
+set backupcopy=yes " Works with webpack
