@@ -64,10 +64,5 @@ nnoremap \- :exe "vertical resize -10"<CR>
 set splitbelow
 set splitright
 
-nnoremap <C-j> <C-w><C-j>
-nnoremap <C-k> <C-w><C-k>
-nnoremap <C-l> <C-w><C-l>
-nnoremap <C-h> <C-w><C-h>
-
 let NERDTreeIgnore= ['\.pyc$'] " Ignore .pyc files
 set backupcopy=yes " Works with webpack
