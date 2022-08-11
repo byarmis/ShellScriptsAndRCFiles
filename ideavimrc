@@ -30,4 +30,5 @@ set smartcase
 set incsearch
 
 set whichwrap+=<,>,h,l,[,] " left and right at end of lines will wrap
+autocmd FileType vue setlocal noexpandtab
 
