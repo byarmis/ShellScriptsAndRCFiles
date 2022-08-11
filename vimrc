@@ -66,3 +66,7 @@ set splitright
 
 let NERDTreeIgnore= ['\.pyc$'] " Ignore .pyc files
 set backupcopy=yes " Works with webpack
+
+" Allow saving of files as sudo when I forgot to start vim using sudo.
+" https://stackoverflow.com/a/7078429
+cmap w!! w !sudo tee > /dev/null %
